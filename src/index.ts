@@ -22,7 +22,7 @@ export type QuillLanguageToolParams = {
  */
 export class QuillLanguageTool {
   static DEFAULTS: QuillLanguageToolParams = {
-    server: "https://languagetool.org/api",
+    server: "https://api.languagetoolplus.com",
     language: "en-US",
     disableNativeSpellcheck: true,
     cooldownTime: 3000,
