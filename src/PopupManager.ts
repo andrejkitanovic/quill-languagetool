@@ -87,7 +87,7 @@ export default class PopupManager {
       this.parent.quill.deleteText(match.offset, match.length);
       this.parent.quill.insertText(match.offset, replacement);
       // @ts-ignore
-      this.parent.quill.setSelection(match.offset + replacement.length);
+      this.parent.quill.setSelection(match.offset + replacement.length - 1);
 
       this.updateOffsets(replacement.length, match.length, match.offset);
 
